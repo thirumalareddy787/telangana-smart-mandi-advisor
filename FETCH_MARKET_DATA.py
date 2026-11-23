@@ -22,7 +22,8 @@ DB_CONFIG = {
     "database": "agri_analysis"
 }
 
-DATA_GOV_API_KEY = ""  # <-- Paste your data.gov.in API key here
+DATA_GOV_API_KEY = st.secrets.get("DATA_GOV_API_KEY", "")
+  # <-- Paste your data.gov.in API key here
 RESOURCE_ID = "9ef84268-d588-465a-a308-a864a43d0070"
 
 SUMMARY_CSV_PATH = "farmer_mandi_summary.csv"
@@ -30,6 +31,10 @@ FORECAST_CSV_PATH = "farmer_day_by_day_forecast.csv"
 FEEDBACK_CSV_PATH = "farmer_feedback.csv"
 
 geolocator = Nominatim(user_agent="telangana_pincode_mandi_map_v5")
+
+
+
+
 
 
 # ==============================================================================
