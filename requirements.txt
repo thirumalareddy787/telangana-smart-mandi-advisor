@@ -1,0 +1,8 @@
+streamlit
+pandas
+requests
+geopy
+folium
+streamlit-folium
+gTTS
+mysql-connector-python
